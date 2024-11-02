@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milan Rathod Portfolio</title>
+    <title>Milan Rathod</title>
     <style>
         /* Reset */
         * {
@@ -15,16 +15,7 @@
         body, html {
             height: 100%;
             font-family: Arial, sans-serif; /* Standard font */
-        }
-
-        /* Off-white background */
-        body {
-            background-color: #f8f8f8; /* Off-white color */
-        }
-
-        /* Main container to hold the sidebar and image */
-        .container {
-            height: 100%;
+            background-color: #f8f8f8; /* Off-white background */
             display: flex; /* Use flexbox to align items */
         }
 
@@ -69,39 +60,50 @@
             color: #0000FF; /* Change to blue on hover */
         }
 
-        /* Profile image styling */
-        .image-container {
-            flex: 1; /* Allow this to take the remaining space */
-            display: flex;
-            justify-content: center; /* Center image horizontally */
-            align-items: center; /* Center image vertically */
-            padding: 20px; /* Padding around the image */
+        /* Submenu styling */
+        .submenu {
+            margin-left: 20px; /* Indent submenu */
         }
 
-        .profile-image {
-            max-width: 100%; /* Responsive image */
-            height: auto; /* Maintain aspect ratio */
-            width: 60%; /* Set width to 60% of the container */
-            border-radius: 10px; /* Optional: round the corners */
+        /* Main content styling */
+        .content {
+            flex: 1; /* Take the remaining space */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex-direction: column; /* Stack items vertically */
+            padding: 20px; /* Padding for the content */
+            margin-left: 20px; /* Add margin to the left for spacing */
+        }
+
+        .content p {
+            font-size: 1.5em; /* Increase font size for readability */
+            font-style: italic; /* Italic style for the text */
+            text-align: center; /* Center the text */
+            margin: 20px 0; /* Margin for spacing */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <h1 class="name">Milan Rathod</h1>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="feature-films.html">Feature Films</a></li>
-                    <li><a href="#short-films">Short Films</a></li>
-                    <li><a href="#other">Other</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="image-container">
-            <img src="milanrathod.jpeg" alt="Milan Rathod" class="profile-image">
-        </div>
+    <div class="sidebar">
+        <h1 class="name">Milan Rathod</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="feature-films.html">Feature Films</a></li>
+                <li>
+                    <a href="short-films.html">Short Films</a>
+                    <ul class="submenu">
+                        <li><a href="woong-woong.html">Woong Woong</a></li>
+                    </ul>
+                </li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <p>Welcome to my website!</p>
+        <p>Click on the menu to explore my work.</p>
     </div>
 </body>
 </html>

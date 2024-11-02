@@ -4,27 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milan Rathod</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif; /* Standard font */
+            background-color: #f8f8f8; /* Off-white background */
+            display: flex; /* Use flexbox to align items */
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 300px; /* Width of the sidebar */
+            background-color: #f8f8f8; /* Match the off-white background */
+            padding: 20px; /* Padding inside the sidebar */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align items to the top */
+            margin-top: 40px; /* Increased space from the top of the page */
+            margin-left: 20px; /* Added margin to the left */
+        }
+
+        /* Name styling */
+        .name {
+            font-size: 1.75em; /* Increased font size */
+            margin-bottom: 30px; /* Increased spacing below the name */
+            color: #000000; /* Black text */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Navigation styling */
+        .navigation ul {
+            list-style: none;
+            padding: 0; /* Remove default padding */
+        }
+
+        .navigation ul li {
+            margin: 10px 0; /* Reduced spacing between menu items */
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: 1em; /* Increased font size */
+            color: #000000; /* Black text */
+            transition: color 0.3s;
+        }
+
+        .navigation a:hover {
+            color: #0000FF; /* Change to blue on hover */
+        }
+
+        /* Submenu styling */
+        .submenu {
+            margin-left: 20px; /* Indent submenu */
+        }
+
+        /* Main content styling */
+        .content {
+            flex: 1; /* Take the remaining space */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex-direction: column; /* Stack items vertically */
+            padding: 20px; /* Padding for the content */
+            margin-left: 20px; /* Add margin to the left for spacing */
+        }
+
+        .content p {
+            font-size: 1.5em; /* Increase font size for readability */
+            font-style: italic; /* Italic style for the text */
+            text-align: center; /* Center the text */
+            margin: 20px 0; /* Margin for spacing */
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
-        <div class="name">Milan Rathod</div>
-        <div class="navigation">
+        <h1 class="name">Milan Rathod</h1>
+        <nav class="navigation">
             <ul>
                 <li><a href="feature-films.html">Feature Films</a></li>
                 <li>
-                    <a href="#">Short Films</a>
+                    <a href="short-films.html">Short Films</a>
                     <ul class="submenu">
                         <li><a href="woong-woong.html">Woong Woong</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Other</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="content">
-        <p>Welcome to my portfolio website!</p>
+        <p>Welcome to my website!</p>
+        <p>Click on the menu to explore my work.</p>
     </div>
 </body>
 </html>

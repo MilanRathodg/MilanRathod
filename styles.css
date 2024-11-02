@@ -1,4 +1,4 @@
-/* Reset some basic styling */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,43 +8,42 @@
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
+    color: #ffffff;
+    overflow: hidden;
 }
 
-/* Centering content */
-.container {
+/* Background image styling */
+body {
+    background: url('your-image.jpg') no-repeat center center/cover;
+}
+
+/* Dark overlay for text visibility */
+.overlay {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    text-align: center;
-    background-color: #f5f5f5;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
 
-/* Main Image Styling */
-.main-image {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Navigation Styling */
+/* Navigation styling */
 .navigation ul {
     list-style: none;
+    text-align: center;
 }
 
 .navigation ul li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .navigation a {
     text-decoration: none;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
 .navigation a:hover {
-    color: #666;
+    color: #cccccc;
 }

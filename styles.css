@@ -9,16 +9,12 @@ body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    overflow: hidden;
 }
 
-/* Background image styling */
+/* Full-screen background image */
 body {
-    background-color: #333; /* Fallback background color */
-    background-image: url('background.jpg'); /* Ensure this path is correct */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('milanrathod.jpg') no-repeat center center/cover; /* Updated image name */
+    background-color: #000; /* Fallback color in case the image doesn't load */
 }
 
 /* Dark overlay for text visibility */
@@ -27,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
 }
 
 /* Navigation styling */
@@ -44,10 +40,10 @@ body {
     text-decoration: none;
     font-size: 2em;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffffff; /* White text for contrast */
     transition: color 0.3s;
 }
 
 .navigation a:hover {
-    color: #cccccc;
+    color: #cccccc; /* Lighter color on hover */
 }

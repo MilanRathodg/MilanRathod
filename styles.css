@@ -7,17 +7,8 @@
 
 body, html {
     height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-/* Off-white background */
-body {
-    background-color: #f8f8f8; /* Off-white color */
-}
-
-/* Main container to hold the sidebar and image */
-.container {
-    height: 100%;
+    font-family: Arial, sans-serif; /* Standard font */
+    background-color: #f8f8f8; /* Off-white background */
     display: flex; /* Use flexbox to align items */
 }
 
@@ -29,12 +20,14 @@ body {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align items to the top */
+    margin-top: 40px; /* Increased space from the top of the page */
+    margin-left: 20px; /* Added margin to the left */
 }
 
 /* Name styling */
 .name {
-    font-size: 2.5em; /* Size of your name */
-    margin-bottom: 40px; /* Spacing below the name */
+    font-size: 1.75em; /* Increased font size */
+    margin-bottom: 30px; /* Increased spacing below the name */
     color: #000000; /* Black text */
     text-align: left; /* Align text to the left */
 }
@@ -46,12 +39,12 @@ body {
 }
 
 .navigation ul li {
-    margin: 20px 0;
+    margin: 10px 0; /* Reduced spacing between menu items */
 }
 
 .navigation a {
     text-decoration: none;
-    font-size: 1.5em; /* Font size for links */
+    font-size: 1em; /* Increased font size */
     color: #000000; /* Black text */
     transition: color 0.3s;
 }
@@ -60,18 +53,30 @@ body {
     color: #0000FF; /* Change to blue on hover */
 }
 
-/* Profile image styling */
-.image-container {
-    flex: 1; /* Allow this to take the remaining space */
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center image vertically */
-    padding: 20px; /* Padding around the image */
+/* Submenu styling */
+.submenu {
+    display: none; /* Hide submenu by default */
+    margin-left: 20px; /* Indent submenu */
 }
 
-.profile-image {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    width: 60%; /* Set width to 60% of the container */
-    border-radius: 10px; /* Optional: round the corners */
+.navigation ul li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+/* Main content styling */
+.content {
+    flex: 1; /* Take the remaining space */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Padding for the content */
+    margin-left: 20px; /* Add margin to the left for spacing */
+}
+
+.content p {
+    font-size: 1.5em; /* Increase font size for readability */
+    font-style: italic; /* Italic style for the text */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Margin for spacing */
 }

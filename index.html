@@ -75,4 +75,33 @@
             display: flex;
             justify-content: center; /* Center image horizontally */
             align-items: center; /* Center image vertically */
-            padding: 20px; /* Padding 
+            padding: 20px; /* Padding around the image */
+        }
+
+        .profile-image {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            width: 60%; /* Set width to 60% of the container */
+            border-radius: 10px; /* Optional: round the corners */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1 class="name">Milan Rathod</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#feature-films">Feature Films</a></li>
+                    <li><a href="#short-films">Short Films</a></li>
+                    <li><a href="#other">Other</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="image-container">
+            <img src="milanrathod.jpeg" alt="Milan Rathod" class="profile-image">
+        </div>
+    </div>
+</body>
+</html>

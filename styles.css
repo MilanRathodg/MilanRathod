@@ -14,7 +14,11 @@ body, html {
 
 /* Background image styling */
 body {
-    background: url('milanrathod.jpg') no-repeat center center/cover;
+    background-color: #333; /* Fallback background color */
+    background-image: url('background.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Dark overlay for text visibility */

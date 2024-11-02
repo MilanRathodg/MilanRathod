@@ -1,85 +1,98 @@
-/* Reset */
+/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    display: flex;
+    color: #333;
+    background-color: #f4f4f9;
 }
 
-/* Sidebar styling */
-.sidebar {
-    width: 300px;
-    background-color: #f8f8f8;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-/* Name styling */
-.name {
-    font-size: 1.75em;
-    margin-bottom: 30px;
-    color: #000000;
-    text-align: left;
-}
-
-/* Navigation styling */
-.navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navigation ul li {
-    margin: 10px 0;
-    position: relative; /* Positioning for submenu */
-}
-
-.navigation a {
-    text-decoration: none;
-    font-size: 1em;
-    color: #000000;
-    transition: color 0.3s;
-}
-
-.navigation a:hover {
-    color: #0000FF;
-}
-
-/* Submenu styling */
-.submenu {
-    display: none; /* Hide submenu by default */
-    position: absolute;
-    left: 120px; /* Adjust as needed */
-    top: 0;
-}
-
-.navigation ul li:hover .submenu {
-    display: block; /* Show submenu on hover */
-}
-
-/* Main content styling */
-.content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    margin-left: 20px;
-}
-
-.content p {
-    font-size: 1.5em;
-    font-style: italic;
+/* Header */
+header {
     text-align: center;
-    margin: 20px 0;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007acc;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+}
+
+/* About and Contact Sections */
+#about, #contact {
+    padding: 50px 20px;
+}
+
+#about h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #007acc;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }

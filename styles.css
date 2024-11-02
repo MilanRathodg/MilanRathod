@@ -16,27 +16,23 @@ body {
     background-color: #000; /* Fallback color */
 }
 
-/* Overlay styling */
+/* Main container to hold the sidebar */
 .container {
     height: 100%;
-    display: flex;
-    justify-content: flex-start; /* Aligns children to the left */
-}
-
-.overlay {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    width: 300px; /* Width of the sidebar */
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+    display: flex; /* Use flexbox to align items */
 }
 
 /* Sidebar styling */
 .sidebar {
-    padding: 20px;
+    width: 300px; /* Width of the sidebar */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+    padding: 20px; /* Padding inside the sidebar */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
 }
 
+/* Name styling */
 .name {
     font-size: 2.5em; /* Size of your name */
     margin-bottom: 40px; /* Spacing below the name */
@@ -56,11 +52,20 @@ body {
 
 .navigation a {
     text-decoration: none;
-    font-size: 1.5em; /* Smaller font size for links */
+    font-size: 1.5em; /* Font size for links */
     color: #ffffff; /* White text */
     transition: color 0.3s;
 }
 
 .navigation a:hover {
     color: #cccccc; /* Lighter color on hover */
+}
+
+/* Overlay styling (remove if not needed) */
+.overlay {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
 }

@@ -1,98 +1,82 @@
-/* Reset some default styling */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Standard font */
+    background-color: #f8f8f8; /* Off-white background */
+    display: flex; /* Use flexbox to align items */
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-nav {
-    margin-bottom: 20px;
-}
-
-nav a {
-    color: #333;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #007acc;
-}
-
-/* Projects Section */
-#projects {
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
-#projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.project-grid {
+/* Sidebar styling */
+.sidebar {
+    width: 300px; /* Width of the sidebar */
+    background-color: #f8f8f8; /* Match the off-white background */
+    padding: 20px; /* Padding inside the sidebar */
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    margin-top: 40px; /* Increased space from the top of the page */
+    margin-left: 20px; /* Added margin to the left */
 }
 
-.project {
-    width: 300px;
-    text-align: center;
+/* Name styling */
+.name {
+    font-size: 1.75em; /* Increased font size */
+    margin-bottom: 30px; /* Increased spacing below the name */
+    color: #000000; /* Black text */
+    text-align: left; /* Align text to the left */
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
+/* Navigation styling */
+.navigation ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
 }
 
-.project h3 {
-    font-size: 1.5rem;
+.navigation ul li {
+    margin: 10px 0; /* Reduced spacing between menu items */
 }
 
-/* About and Contact Sections */
-#about, #contact {
-    padding: 50px 20px;
-}
-
-#about h2, #contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #007acc;
+.navigation a {
     text-decoration: none;
+    font-size: 1em; /* Increased font size */
+    color: #000000; /* Black text */
+    transition: color 0.3s;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.navigation a:hover {
+    color: #0000FF; /* Change to blue on hover */
+}
+
+/* Submenu styling */
+.submenu {
+    display: none; /* Hide submenu by default */
+    margin-left: 20px; /* Indent submenu */
+}
+
+.navigation ul li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+/* Main content styling */
+.content {
+    flex: 1; /* Take the remaining space */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Padding for the content */
+    margin-left: 20px; /* Add margin to the left for spacing */
+}
+
+.content p {
+    font-size: 1.5em; /* Increase font size for readability */
+    font-style: italic; /* Italic style for the text */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Margin for spacing */
 }

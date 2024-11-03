@@ -3,46 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Videos | Milan Rathod</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Music Videos</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif; /* Standard font */
+            background-color: #f8f8f8; /* Off-white background */
+            display: flex; /* Use flexbox to align items */
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 300px; /* Width of the sidebar */
+            background-color: #f8f8f8; /* Match the off-white background */
+            padding: 20px; /* Padding inside the sidebar */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align items to the top */
+            margin-top: 40px; /* Increased space from the top of the page */
+            margin-left: 20px; /* Added margin to the left */
+        }
+
+        /* Name styling */
+        .name {
+            font-size: 1.75em; /* Increased font size */
+            margin-bottom: 30px; /* Increased spacing below the name */
+            color: #000000; /* Black text */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Navigation styling */
+        .navigation ul {
+            list-style: none;
+            padding: 0; /* Remove default padding */
+        }
+
+        .navigation ul li {
+            margin: 10px 0; /* Reduced spacing between menu items */
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: 1em; /* Increased font size */
+            color: #000000; /* Black text */
+            transition: color 0.3s;
+        }
+
+        .navigation a:hover {
+            color: #0000FF; /* Change to blue on hover */
+        }
+
+        /* Main content styling */
+        .content {
+            flex: 1; /* Take the remaining space */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: flex-start; /* Align content to the start */
+            padding: 20px; /* Padding for the content */
+            margin-left: 20px; /* Add margin to the left for spacing */
+        }
+
+        .videos {
+            margin-left: 40px; /* Spacing to the left of the videos */
+        }
+
+        .videos h2 {
+            margin-bottom: 20px; /* Space below the title */
+        }
+
+        .videos p {
+            font-size: 1.2em; /* Font size for video titles */
+            font-style: italic; /* Italic style for the titles */
+            margin-bottom: 10px; /* Space between titles */
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
-        <div class="name">Milan Rathod</div>
-        <div class="navigation">
+        <h1 class="name">Milan Rathod</h1>
+        <nav class="navigation">
             <ul>
                 <li><a href="feature-films.html">Feature Films</a></li>
                 <li>
-                    <a href="short-films.html">Short Films</a>
-                    <ul class="submenu">
-                        <li><a href="woong-woong.html">Woong Woong</a></li>
-                    </ul>
+                    <a href="#short-films">Short Films</a>
                 </li>
                 <li>
-                    <a href="#">Other</a>
+                    <a href="#other">Other</a>
                     <ul class="submenu">
                         <li><a href="music-videos.html">Music Videos</a></li>
                     </ul>
                 </li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="content">
-        <h1>Music Videos</h1>
-        <h2>Chastaavu</h2>
-        <p>Watch the music video for Chastaavu here:</p>
-        <video controls>
-            <source src="path/to/chastaavu.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <h2>Andar Ka Janwar</h2>
-        <p>Watch the music video for Andar Ka Janwar here:</p>
-        <video controls>
-            <source src="path/to/andar-ka-janwar.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="videos">
+            <h2>Music Videos</h2>
+            <p>1. Chastavu</p>
+            <p>2. Andar Ka Janwar</p>
+        </div>
     </div>
 </body>
 </html>
